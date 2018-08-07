@@ -1,0 +1,7 @@
+.auth__form {
+  width: 25%;
+  margin: 1rem auto;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  padding: 2rem;
+}
