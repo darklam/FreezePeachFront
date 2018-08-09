@@ -1,0 +1,14 @@
+.form__container {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form__container input::placeholder {
+  font-weight: 500;
+}
+
+.auth__container {
+  background-color: #e9eaec;
+  height: 100vh;
+}
