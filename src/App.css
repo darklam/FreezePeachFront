@@ -1,6 +1,9 @@
-body, html {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto';
+.button--green {
+  background-color: #9fdc9f !important;
+  color: #fff !important;
+}
+
+.button--orange {
+  background-color: #ffb42a !important;
+  color: #fff !important;
 }
