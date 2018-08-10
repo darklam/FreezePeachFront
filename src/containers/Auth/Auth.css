@@ -2,6 +2,7 @@
   width: 80%;
   max-width: 500px;
   margin: auto;
+  padding-top: 10rem;
 }
 
 .form__container input::placeholder {
