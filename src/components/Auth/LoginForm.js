@@ -1,5 +1,6 @@
 import React from "react";
 import { FormControl, TextField, FormGroup, Button } from "@material-ui/core";
+import axios from "axios";
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -32,9 +33,9 @@ class LoginForm extends React.Component {
   formSubmitHandler(e) {
     e.preventDefault();
     const { username, password } = this.state;
-    // send to backend
-    console.log("Username: ", username);
-    console.log("Password: ", password);
+    axios
+      .post("/auth/getToken", { username, password })
+      .then(res => console.log(res));
   }
 
   styles = {
@@ -55,6 +56,7 @@ class LoginForm extends React.Component {
             />
             <TextField
               label="Password"
+              type="password"
               value={this.state.password}
               onChange={this.passwordChangeHandler}
             />
